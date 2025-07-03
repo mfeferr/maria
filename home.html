@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Aluguel de Veículos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Aluguel de Veículos</h1>
+  </header>
+
+  <main>
+    <h2>Escolha seu veículo</h2>
+    <div class="galeria">
+      <div class="carro" onclick="selecionarCarro('Carro 1')">
+        <img src="https://via.placeholder.com/200x120?text=Carro+1">
+        <p>Carro 1</p>
+      </div>
+      <div class="carro" onclick="selecionarCarro('Carro 2')">
+        <img src="https://via.placeholder.com/200x120?text=Carro+2">
+        <p>Carro 2</p>
+      </div>
+      <div class="carro" onclick="selecionarCarro('Carro 3')">
+        <img src="https://via.placeholder.com/200x120?text=Carro+3">
+        <p>Carro 3</p>
+      </div>
+    </div>
+
+    <div id="formularioAluguel" style="display:none;">
+      <h3>Preencha os dados do motorista</h3>
+      <input type="text" id="nomeMotorista" placeholder="Nome do Motorista">
+      <input type="text" id="cnhMotorista" placeholder="Número da CNH">
+      <button onclick="finalizarAluguel()">Finalizar Pedido</button>
+    </div>
+
+    <p id="mensagem"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
